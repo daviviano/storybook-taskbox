@@ -14,8 +14,10 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.0.4"
   },
   "scripts": {
     "dev": "vite",
@@ -23,9 +25,11 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "init-msw": "msw init public/"
+    "init-msw": "msw init public/",
+    "test-storybook": "test-storybook"
   },
   "devDependencies": {
+    "@storybook/addon-a11y": "^7.6.5",
     "@storybook/addon-essentials": "^7.5.2",
     "@storybook/addon-interactions": "^7.5.2",
     "@storybook/addon-links": "^7.5.2",
@@ -33,6 +37,7 @@
     "@storybook/jest": "^0.2.3",
     "@storybook/react": "^7.5.2",
     "@storybook/react-vite": "^7.5.2",
+    "@storybook/test-runner": "^0.16.0",
     "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
@@ -45,5 +50,8 @@
   },
   "resolutions": {
     "jackspeak": "2.1.1"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }
